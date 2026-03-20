@@ -11,18 +11,18 @@ export function Footer() {
               SOD EAST TRADE HOUSE
             </h3>
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              Комплексные инженерные решения для промышленных предприятий Узбекистана и СНГ
+              Поставка промышленного оборудования, комплектующих и монтаж под ключ
             </p>
           </div>
           
-          {/* Services */}
+          {/* Products & Services */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Услуги</h4>
+            <h4 className="font-semibold text-foreground mb-4">Продукция и услуги</h4>
             <ul className="space-y-3 text-muted-foreground">
-              <li>Инженеринг</li>
-              <li>Монтаж оборудования</li>
-              <li>Пуск и наладка</li>
               <li>Поставка оборудования</li>
+              <li>Монтаж под ключ</li>
+              <li>Пуск и наладка</li>
+              <li>Сервис и обслуживание</li>
             </ul>
           </div>
           

@@ -8,8 +8,8 @@ export function Hero() {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const scrollToServices = () => {
-    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToProducts = () => {
+    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -29,15 +29,15 @@ export function Hero() {
         <div className="container mx-auto px-6 md:px-8 pt-24 pb-16">
           <div className="max-w-3xl">
             <p className="text-white/70 text-sm md:text-base font-medium tracking-wide uppercase mb-6">
-              Инженерные решения
+              Оборудование и решения для промышленности
             </p>
 
             <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-8 text-balance">
-              Комплексные решения для промышленности
+              Оборудование, комплектующие и монтаж под ключ
             </h1>
 
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-              Инженеринг, монтаж, пусконаладка и обслуживание оборудования для пищевой, энергетической и металлургической отрасли
+              Поставка промышленного оборудования от ведущих европейских производителей, комплексный монтаж и пусконаладка под ключ
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -52,9 +52,9 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10 font-medium px-8 h-12 text-base group bg-transparent"
-                onClick={scrollToServices}
+                onClick={scrollToProducts}
               >
-                Наши услуги
+                Наша продукция
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
