@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "title": "SOD EAST TRADE HOUSE | Mühendislik ve Endüstriyel Çözümler",
+    "description": "Endüstriyel işletmeler için kapsamlı mühendislik çözümleri. Montaj, devreye alma, ekipman onarımı."
+  },
+  "header": {
+    "about": "Hakkımızda",
+    "industries": "Sektörler",
+    "products": "Ürünler",
+    "services": "Hizmetler",
+    "contact": "İletişim",
+    "cta": "İletişime Geç",
+    "menu": "Menü"
+  },
+  "hero": {
+    "subtitle": "Endüstri için ekipman ve mühendislik çözümleri",
+    "title": "Ekipman, bileşenler, mühendislik çözümleri ve anahtar teslimi kurulum",
+    "description": "Önde gelen Avrupa üreticilerinden endüstriyel ekipman ve bileşen temini, mühendislik, kapsamlı montaj ve devreye alma",
+    "ctaContact": "Bize Ulaşın",
+    "ctaServices": "Hizmetlerimiz",
+    "imageAlt": "SOD EAST TRADE HOUSE — endüstriyel üretim"
+  },
+  "about": {
+    "label": "Hakkımızda",
+    "title": "Üretiminiz için güvenilir bir ortak",
+    "text1": "<strong>SOD EAST TRADE HOUSE LLC</strong> — endüstriyel ekipman, bileşen ve kapsamlı mühendislik çözümleri tedarikinde uzmanlaşmış bir şirkettir.",
+    "text2": "Önde gelen Avrupa üreticileriyle çalışıyor ve tam döngü sağlıyoruz — mühendislik hesaplamalarından, ekipman seçimi ve tedarikinden montaj, devreye alma ve servis bakıma kadar.",
+    "clients": "Müşterilerimiz",
+    "imageAlt1": "Mühendislik çalışmaları",
+    "imageAlt2": "Endüstriyel ekipman",
+    "stats": {
+      "objects": "Endüstriyel tesis",
+      "projects": "Başarılı proje",
+      "specialists": "Uzman",
+      "experience": "Yıllık deneyim"
+    }
+  },
+  "industries": {
+    "label": "Sektörler",
+    "title": "Uzmanlık Alanlarımız",
+    "items": {
+      "food": {
+        "title": "Gıda Endüstrisi",
+        "description": "Meşrubat fabrikaları, bira fabrikaları, süt fabrikaları, konserve fabrikaları"
+      },
+      "energy": {
+        "title": "Enerji",
+        "description": "Enerji santralleri, trafo merkezleri, enerji altyapısı"
+      },
+      "chemical": {
+        "title": "Kimya Endüstrisi",
+        "description": "Kimya işletmeleri ve zenginleştirme fabrikaları"
+      },
+      "metallurgy": {
+        "title": "Metalürji",
+        "description": "Metalürji fabrikaları ve metal işleme"
+      }
+    }
+  },
+  "products": {
+    "label": "Ürünler",
+    "equipmentTitle": "Ekipman",
+    "componentsTitle": "Ekipman Bileşenleri",
+    "componentsSubtitle": "Önde gelen Avrupa üreticilerinden ekipman ve bileşen temini",
+    "waterTreatmentStandard": "SOD standart su arıtma çözümleri şunları içerir:",
+    "equipment": {
+      "waterTreatment": {
+        "title": "Su Arıtma",
+        "description": "Çeşitli endüstri dalları için kapsamlı su arıtma çözümleri — mühendislik hesaplamalarından anahtar teslimi ekipman teminatına kadar.",
+        "details": [
+          "Mekanik filtre (kaba filtrasyon) — büyük safsızlıkları giderir: kum, pas, tortu. Sonraki ekipmanı tıkanmaya karşı korur.",
+          "İnce filtre — daha küçük parçacıkları (askıda katı maddeler) tutar, su berraklığını artırır.",
+          "Karbon filtre — klor, organik maddeler, hoş olmayan koku ve tatları giderir.",
+          "Su yumuşatıcı — kalsiyum ve magnezyum tuzlarını gidererek su sertliğini azaltır (kireç oluşumunu önler).",
+          "Demir giderici — demir ve manganı giderir, suyun renklenmsini ve tortu oluşumunu önler.",
+          "Ters ozmoz sistemi — derin arıtma: çözünmüş maddelerin, bakterilerin ve tuzların %99'una kadarını giderir.",
+          "UV sterilizatör — ultraviyole ışık kullanarak bakteri ve virüsleri yok ederek suyu dezenfekte eder."
+        ],
+        "footer": "Tüm sistem boru hatlarıyla bağlanmış, pompa istasyonları ve tanklarla donatılmıştır. Tüm ana düğümler ve elemanlar paslanmaz çelikten yapılmış olup, mevcut kalite standartlarına uygunluğu, artırılmış operasyonel güvenilirliği ve uzun ekipman ömrünü sağlar."
+      },
+      "blending": {
+        "title": "SOD BLENDING Karıştırma Üniteleri",
+        "description": "",
+        "applications": {
+          "0": { "area": "Gıda Endüstrisi (şeker ve tuz çözme)", "text": "Karıştırma üniteleri, belirlenen konsantrasyonlarda şeker ve tuz çözeltileri hazırlamak için kullanılır. Hızlı ve homojen çözmeyi, ürün kalitesi istikrarını ve sağlık gerekliliklerine uyumu sağlar." },
+          "1": { "area": "Konserve Endüstrisi (bileşen çözme)", "text": "Ekipman, bileşenlerin (tuz, şeker, katkı maddeleri, marinatlar) çözülmesi ve hazırlanması için kullanılır. Çözelti homojenliğini, dozaj doğruluğunu ve reçete istikrarını sağlar." },
+          "2": { "area": "Kimya Endüstrisi (bileşen karıştırma)", "text": "Karıştırma üniteleri, kimyasal maddelerin karıştırılması ve çözülmesi için kullanılır. Bileşenlerin eşit dağılımını, proses parametre kontrolünü ve üretim verimliliğini sağlar." }
+        }
+      },
+      "dosing": {
+        "title": "SOD DOSING Dozaj Üniteleri",
+        "description": "",
+        "applications": {
+          "0": { "area": "Konserve Endüstrisi (bileşen dozajı)", "text": "Ekipman, salamura, marinat, katkı maddeleri ve diğer bileşenlerin dozajlı beslenmesi için kullanılır. Bileşenlerin eşit dağılımını, ürün kalitesi tekrarlanabilirliğini ve üretim süreci optimizasyonunu sağlar." },
+          "1": { "area": "Kimya Endüstrisi (reaktif dozajı)", "text": "Dozaj üniteleri, kimyasal reaktiflerin proses hatlarına hassas beslenmesi için tasarlanmıştır. Akış kontrolünü, proses güvenliğini ve kimyasal reaksiyonların stabilitesini sağlar." }
+        }
+      },
+      "cip": {
+        "title": "SOD CIP İstasyonları",
+        "description": "",
+        "applications": {
+          "0": { "area": "Meşrubat Endüstrisi", "text": "CIP istasyonları, proses ekipmanının sökülmeden otomatik yıkama ve dezenfeksiyonunu sağlar, yüksek hijyen seviyesini, duruş sürelerinin azaltılmasını ve son ürün kalitesi istikrarını garanti eder." },
+          "1": { "area": "Süt Endüstrisi", "text": "CIP istasyonları, yağ, protein ve mineral kirliliklerin etkili bir şekilde giderilmesi için tasarlanmıştır. Katı sağlık gerekliliklerine uyumu sağlar ve üretim güvenliğini artırır." },
+          "2": { "area": "Konserve Endüstrisi", "text": "CIP istasyonları, tankların, boru hatlarının ve üretim hatlarının kapsamlı temizliği için kullanılır; ürün kalıntılarının giderilmesini, mikrobiyolojik kirlenme riskinin azaltılmasını ve proses istikrarını sağlar." },
+          "3": { "area": "Kimya Endüstrisi", "text": "CIP istasyonları, ekipmanın reaktif kalıntıları ve reaksiyon ürünlerinden temizlenmesi için kullanılır; çapraz kirliliği önler, operasyonel güvenliği ve üretim döngüsü verimliliğini artırır." }
+        }
+      }
+    },
+    "components": {
+      "tanks": {
+        "title": "Tank Ekipmanları",
+        "description": "Çeşitli boyutlarda paslanmaz çelik tanklar — aseptik, karıştırma tankları, fermentörler, tampon ve depolama tankları. Gıda, kimya, ilaç ve diğer endüstrilerde kullanılır."
+      },
+      "heatExchangers": {
+        "title": "Isı Eşanjörleri",
+        "description": "Önde gelen Alfa Laval şirketinden ısıtma, soğutma ve pastörizasyon için plakalı ısı eşanjörleri. Yüksek ısı transfer verimliliği, kompakt boyutlar, kolay bakım. Gıda, enerji, kimya endüstrilerinde ve ısıtma sistemlerinde kullanılır."
+      },
+      "valves": {
+        "title": "Vanalar",
+        "description": "ALFA LAVAL, KIESELMANN kesme ve kontrol vanaları — koltuklu, diskli, kesme ve yönlendirme vanaları. Endüstriyel işletmelerin boru sistemlerinde hassas akış kontrolü."
+      },
+      "pumps": {
+        "title": "Pompalar",
+        "description": "Çeşitli viskozitelerde sıvıların pompalanması için santrifüj, rotorlu ve diyafram pompalar. Her türlü proses uygulaması için hijyenik ve endüstriyel tasarımlar."
+      },
+      "automation": {
+        "title": "Otomasyon Elemanları",
+        "description": "Proses otomasyonu için sensörler, kontrolörler, aktüatörler ve kontrol panelleri. Üretim hatlarının gerçek zamanlı izleme ve kontrolü için kapsamlı çözümler."
+      }
+    }
+  },
+  "services": {
+    "label": "Hizmetlerimiz",
+    "title": "Endüstriyel Çözümlerin Tam Yelpazesi",
+    "subtitle": "Her ölçekte projeler için kapsamlı hizmetler — konseptten devreye almaya kadar",
+    "items": {
+      "supply": { "title": "Ekipman Temini", "description": "Önde gelen Avrupa üreticilerinden endüstriyel ekipman ve bileşenlerin seçimi ve temini" },
+      "installation": { "title": "Anahtar Teslimi Kurulum", "description": "Proses hatları, boru tesisatı ve ekipmanın anahtar teslimi kapsamlı montajı" },
+      "engineering": { "title": "Mühendislik", "description": "Her karmaşıklıktaki endüstriyel tesisler için mühendislik çözümlerinin tasarımı ve geliştirilmesi" },
+      "welding": { "title": "Kaynak İşleri", "description": "Uluslararası standartlara göre boru hattı ve metal yapı kaynağı" },
+      "commissioning": { "title": "Devreye Alma", "description": "Devreye alma çalışmaları ve anahtar teslimi ekipman başlatma" },
+      "maintenance": { "title": "Onarım ve Bakım", "description": "Endüstriyel ekipmanın teknik bakım ve onarımı" },
+      "automationService": { "title": "Otomasyon", "description": "Üretim süreçlerinin programlama ve otomasyonu" },
+      "transport": { "title": "Nakliye Hizmetleri", "description": "AB'den Asya ülkelerine büyük ve standart yüklerin taşınması" }
+    },
+    "summary": {
+      "directions": "Faaliyet alanı",
+      "fullCycle": "Tam iş döngüsü",
+      "support": "Teknik destek"
+    }
+  },
+  "whyUs": {
+    "label": "Avantajlar",
+    "title": "Neden Bizi Seçmelisiniz",
+    "description": "Güven, kalite ve sonuçlara dayalı uzun vadeli ortaklıklar kuruyoruz.",
+    "items": {
+      "comprehensive": { "title": "Kapsamlı Yaklaşım", "description": "Tasarımdan devreye alma ve bakıma kadar tam döngü" },
+      "expertise": { "title": "Teknik Uzmanlık", "description": "Yılların deneyimine sahip mühendis ekibi" },
+      "turnkey": { "title": "Anahtar Teslimi Çözümler", "description": "Kalite garantili tedarik, kurulum ve devreye alma" },
+      "individual": { "title": "Bireysel Yaklaşım", "description": "Belirli üretim görevleri için özel çözümler" }
+    }
+  },
+  "contact": {
+    "label": "İletişim",
+    "title": "Projenizi konuşalım",
+    "subtitle": "Danışmanlık ve ticari teklif almak için bizimle iletişime geçin",
+    "address": "Adres",
+    "addressValue": "Özbekistan Cumhuriyeti, 100017,\nTaşkent, Kiyot-5, ev 65, daire 4",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "form": {
+      "name": "Adınız",
+      "namePlaceholder": "Adınızı girin",
+      "company": "Şirket",
+      "companyPlaceholder": "Şirket adı",
+      "phone": "Telefon",
+      "phonePlaceholder": "+998",
+      "email": "E-posta",
+      "emailPlaceholder": "email@company.com",
+      "message": "Mesaj",
+      "messagePlaceholder": "Projenizi veya görevinizi açıklayın",
+      "submit": "Talep Gönder",
+      "submitting": "Gönderiliyor..."
+    },
+    "success": {
+      "title": "Talebiniz için teşekkürler!",
+      "message": "En kısa sürede sizinle iletişime geçeceğiz"
+    }
+  },
+  "footer": {
+    "tagline": "Endüstriyel ekipman, bileşen temini ve anahtar teslimi kurulum",
+    "productsAndServices": "Ürünler ve Hizmetler",
+    "contacts": "İletişim",
+    "links": {
+      "supply": "Ekipman Temini",
+      "installation": "Anahtar Teslimi Kurulum",
+      "commissioning": "Devreye Alma",
+      "service": "Servis ve Bakım"
+    },
+    "location": "Taşkent, Özbekistan",
+    "copyright": "© {year} SOD EAST TRADE HOUSE LLC. Tüm hakları saklıdır."
+  }
+}

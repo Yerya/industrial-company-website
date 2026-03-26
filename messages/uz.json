@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "title": "SOD EAST TRADE HOUSE | Muhandislik va sanoat yechimlari",
+    "description": "Sanoat korxonalari uchun kompleks muhandislik yechimlari. Montaj, ishga tushirish, uskunalarni ta'mirlash."
+  },
+  "header": {
+    "about": "Kompaniya haqida",
+    "industries": "Tarmoqlar",
+    "products": "Mahsulotlar",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "cta": "Bog'lanish",
+    "menu": "Menyu"
+  },
+  "hero": {
+    "subtitle": "Sanoat uchun uskunalar va muhandislik yechimlari",
+    "title": "Uskunalar, ehtiyot qismlar, muhandislik yechimlari va tayyor montaj",
+    "description": "Yetakchi Yevropa ishlab chiqaruvchilaridan sanoat uskunalari va ehtiyot qismlarini yetkazib berish, muhandislik, kompleks montaj va ishga tushirish",
+    "ctaContact": "Biz bilan bog'laning",
+    "ctaServices": "Bizning xizmatlar",
+    "imageAlt": "SOD EAST TRADE HOUSE — sanoat ishlab chiqarishi"
+  },
+  "about": {
+    "label": "Kompaniya haqida",
+    "title": "Ishlab chiqarishingiz uchun ishonchli hamkor",
+    "text1": "<strong>\"SOD EAST TRADE HOUSE\" MChJ</strong> — sanoat uskunalari, ehtiyot qismlar va kompleks muhandislik yechimlarini yetkazib berishga ixtisoslashgan kompaniya.",
+    "text2": "Biz yetakchi Yevropa ishlab chiqaruvchilari bilan ishlaymiz va to'liq tsiklni ta'minlaymiz — muhandislik hisob-kitoblaridan, uskunalarni tanlash va yetkazib berishdan tortib montaj, ishga tushirish va servis xizmatiga qadar.",
+    "clients": "Bizning mijozlar",
+    "imageAlt1": "Muhandislik ishlari",
+    "imageAlt2": "Sanoat uskunalari",
+    "stats": {
+      "objects": "Sanoat obyektlari",
+      "projects": "Muvaffaqiyatli loyihalar",
+      "specialists": "Mutaxassislar",
+      "experience": "Yillik tajriba"
+    }
+  },
+  "industries": {
+    "label": "Tarmoqlar",
+    "title": "Bizning ixtisosligimiz",
+    "items": {
+      "food": {
+        "title": "Oziq-ovqat sanoati",
+        "description": "Alkogolsiz ichimliklar zavodlari, pivo zavodlari, sut zavodlari, konserva zavodlari"
+      },
+      "energy": {
+        "title": "Energetika",
+        "description": "Elektr stansiyalari, podstansiyalar, energiya infratuzilmasi"
+      },
+      "chemical": {
+        "title": "Kimyo sanoati",
+        "description": "Kimyo korxonalari va boyitish fabrikalari"
+      },
+      "metallurgy": {
+        "title": "Metallurgiya",
+        "description": "Metallurgiya zavodlari va metallga ishlov berish"
+      }
+    }
+  },
+  "products": {
+    "label": "Mahsulotlar",
+    "equipmentTitle": "Uskunalar",
+    "componentsTitle": "Uskunalar uchun ehtiyot qismlar",
+    "componentsSubtitle": "Yetakchi Yevropa ishlab chiqaruvchilaridan uskunalar va ehtiyot qismlarni yetkazib berish",
+    "waterTreatmentStandard": "SOD standart suv tayyorlash yechimlariga quyidagilar kiradi:",
+    "equipment": {
+      "waterTreatment": {
+        "title": "Suv tayyorlash",
+        "description": "Turli sanoat tarmoqlari uchun kompleks suv tayyorlash yechimlari — muhandislik hisob-kitoblaridan tayyor uskunalarni yetkazib berishgacha.",
+        "details": [
+          "Mexanik filtr (qo'pol tozalash) — yirik aralashmalarni olib tashlaydi: qum, zang, loyqa. Keyingi uskunalarni tiqilishdan himoya qiladi.",
+          "Nozik tozalash filtri — mayda zarralarni (muallaq moddalar) ushlab qoladi, suv tiniqligini yaxshilaydi.",
+          "Ko'mir filtri — xlor, organik moddalar, yoqimsiz hid va ta'mni olib tashlaydi.",
+          "Suv yumshatgich — kalsiy va magniy tuzlarini olib tashlash orqali suv qattiqligini kamaytiradi (qaynoq toshni oldini oladi).",
+          "Temirni olib tashlash qurilmasi — temir va marganetsni olib tashlaydi, suv ranglanishi va cho'kmani oldini oladi.",
+          "Teskari osmos tizimi — chuqur tozalash: eritilgan moddalar, bakteriyalar va tuzlarning 99% gacha olib tashlaydi.",
+          "UB-sterilizator — ultrabinafsha nur yordamida bakteriyalar va viruslarni yo'q qilib suvni zararsizlantiradi."
+        ],
+        "footer": "Butun tizim quvurlar bilan bog'langan, nasos stansiyalari va idishlar bilan ta'minlangan. Barcha asosiy tugunlar va elementlar zanglamaydigan po'latdan yasalgan bo'lib, bu amaldagi sifat standartlariga muvofiqlikni, yuqori ekspluatatsion ishonchlilikni va uskunaning uzoq xizmat muddatini ta'minlaydi."
+      },
+      "blending": {
+        "title": "SOD BLENDING aralashtirish qurilmalari",
+        "description": "",
+        "applications": {
+          "0": { "area": "Oziq-ovqat sanoati (shakar va tuz eritish)", "text": "Aralashtirish qurilmalari belgilangan konsentratsiyada shakar va tuz eritmalari tayyorlash uchun ishlatiladi. Tez va bir tekis eritishni, mahsulot sifati barqarorligini va sanitariya talablariga rioya qilishni ta'minlaydi." },
+          "1": { "area": "Konserva sanoati (ingredientlarni eritish)", "text": "Uskunalar komponentlarni (tuz, shakar, qo'shimchalar, marinadlar) eritish va tayyorlash uchun qo'llaniladi. Eritmalar bir xilligini, dozalash aniqligini va retsepturalar barqarorligini ta'minlaydi." },
+          "2": { "area": "Kimyo sanoati (komponentlarni aralashtirish)", "text": "Aralashtirish qurilmalari kimyoviy moddalarni aralashtirish va eritish uchun ishlatiladi. Komponentlarning bir tekis taqsimlanishini, texnologik parametrlarni nazorat qilishni va ishlab chiqarish samaradorligini ta'minlaydi." }
+        }
+      },
+      "dosing": {
+        "title": "SOD DOSING dozalash qurilmalari",
+        "description": "",
+        "applications": {
+          "0": { "area": "Konserva sanoati (ingredientlarni dozalash)", "text": "Uskunalar sho'r suvlar, marinadlar, qo'shimchalar va boshqa ingredientlarni dozali uzatish uchun ishlatiladi. Komponentlarning bir tekis taqsimlanishini, mahsulot sifatining takrorlanishini va ishlab chiqarish jarayonini optimallashtirishni ta'minlaydi." },
+          "1": { "area": "Kimyo sanoati (reagentlarni dozalash)", "text": "Dozalash qurilmalari texnologik liniyalarga kimyoviy reagentlarni aniq uzatish uchun mo'ljallangan. Sarfni nazorat qilish, jarayon xavfsizligini va kimyoviy reaksiyalar barqarorligini ta'minlaydi." }
+        }
+      },
+      "cip": {
+        "title": "SOD CIP stantsiyalari",
+        "description": "",
+        "applications": {
+          "0": { "area": "Alkogolsiz ichimliklar sanoati", "text": "CIP stantsiyalari texnologik uskunalarni qismlarga ajratmasdan avtomatlashtirilgan yuvish va dezinfeksiyasini ta'minlaydi, yuqori gigiena darajasini, bo'sh turish vaqtini qisqartirishni va tayyor mahsulot sifati barqarorligini kafolatlaydi." },
+          "1": { "area": "Sut sanoati (sut zavodlari)", "text": "CIP stantsiyalari yog', oqsil va mineral ifloslanishlarni samarali olib tashlash uchun mo'ljallangan. Qat'iy sanitariya talablariga muvofiqlikni ta'minlaydi va ishlab chiqarish xavfsizligini oshiradi." },
+          "2": { "area": "Konserva sanoati", "text": "CIP stantsiyalari idishlar, quvurlar va ishlab chiqarish liniyalarini kompleks tozalash uchun ishlatiladi, mahsulot qoldiqlarini olib tashlashni, mikrobiologik ifloslanish xavfini kamaytirishni va texnologik jarayonlar barqarorligini ta'minlaydi." },
+          "3": { "area": "Kimyo sanoati", "text": "CIP stantsiyalari uskunalarni reagent qoldiqlari va reaksiya mahsulotlaridan tozalash uchun qo'llaniladi, o'zaro ifloslanishni oldini oladi, ekspluatatsiya xavfsizligini va ishlab chiqarish tsikli samaradorligini oshiradi." }
+        }
+      }
+    },
+    "components": {
+      "tanks": {
+        "title": "Idish uskunalari",
+        "description": "Turli o'lchamdagi zanglamaydigan po'latdan yasalgan idishlar — aseptik, aralashtirish tanklari, fermentatorlar, bufer va saqlash idishlari. Oziq-ovqat, kimyo, farmatsevtika va boshqa sanoat tarmoqlarida qo'llaniladi."
+      },
+      "heatExchangers": {
+        "title": "Issiqlik almashtirgichlar",
+        "description": "Yetakchi Alfa Laval kompaniyasidan isitish, sovutish va pasterizatsiya uchun plastinkali issiqlik almashtirgichlar. Yuqori issiqlik uzatish samaradorligi, ixcham o'lchamlar, oson texnik xizmat. Oziq-ovqat, energetika, kimyo sanoati va isitish tizimlarida qo'llaniladi."
+      },
+      "valves": {
+        "title": "Klapanlar",
+        "description": "ALFA LAVAL, KIESELMANN to'suvchi va rostlovchi armatura — o'rindiqli, diskli, to'suvchi va yo'naltiruvchi klapanlar. Sanoat korxonalari quvur tizimlarida oqimlarni aniq boshqarish."
+      },
+      "pumps": {
+        "title": "Nasoslar",
+        "description": "Turli yopishqoqlikdagi suyuqliklarni haydash uchun markazdan qochma, rotorli va membranali nasoslar. Har qanday texnologik jarayonlar uchun gigiyenik va sanoat bajarilishlari."
+      },
+      "automation": {
+        "title": "Avtomatika elementlari",
+        "description": "Texnologik jarayonlarni avtomatlashtirish uchun datchiklar, kontrollerlar, ijro mexanizmlari va boshqaruv panellari. Ishlab chiqarish liniyalarini real vaqt rejimida monitoring qilish va boshqarish uchun kompleks yechimlar."
+      }
+    }
+  },
+  "services": {
+    "label": "Bizning xizmatlar",
+    "title": "Sanoat yechimlarining to'liq spektri",
+    "subtitle": "Har qanday miqyosdagi loyihalarni amalga oshirish uchun kompleks xizmatlar — g'oyadan ishga tushirishgacha",
+    "items": {
+      "supply": { "title": "Uskunalarni yetkazib berish", "description": "Yetakchi Yevropa ishlab chiqaruvchilaridan sanoat uskunalari va ehtiyot qismlarini tanlash va yetkazib berish" },
+      "installation": { "title": "Tayyor montaj", "description": "Texnologik liniyalar, quvurlar va uskunalarni tayyor holda kompleks montaji" },
+      "engineering": { "title": "Muhandislik", "description": "Har qanday murakkablikdagi sanoat obyektlari uchun muhandislik yechimlarini loyihalash va ishlab chiqish" },
+      "welding": { "title": "Payvandlash ishlari", "description": "Xalqaro standartlar bo'yicha quvurlar va metall konstruksiyalarni payvandlash ishlari" },
+      "commissioning": { "title": "Ishga tushirish va sozlash", "description": "Ishga tushirish-sozlash ishlari va uskunalarni tayyor holda ekspluatatsiyaga kiritish" },
+      "maintenance": { "title": "Ta'mirlash va texnik xizmat", "description": "Sanoat uskunalarini texnik xizmat ko'rsatish va ta'mirlash" },
+      "automationService": { "title": "Avtomatlashtirish", "description": "Ishlab chiqarish jarayonlarini dasturlash va avtomatlashtirish" },
+      "transport": { "title": "Transport xizmatlari", "description": "Yevropa Ittifoqidan Osiyo mamlakatlariga gabaritli va gabaritsiz yuklarni tashish" }
+    },
+    "summary": {
+      "directions": "Faoliyat yo'nalishlari",
+      "fullCycle": "Ishlarning to'liq tsikli",
+      "support": "Texnik qo'llab-quvvatlash"
+    }
+  },
+  "whyUs": {
+    "label": "Afzalliklar",
+    "title": "Nima uchun bizni tanlashadi",
+    "description": "Biz ishonch, sifat va natijalarga asoslangan uzoq muddatli hamkorlik munosabatlarini quramiz.",
+    "items": {
+      "comprehensive": { "title": "Kompleks yondashuv", "description": "Loyihalashdan ishga tushirish va xizmat ko'rsatishgacha to'liq tsikl" },
+      "expertise": { "title": "Texnik ekspertiza", "description": "Ko'p yillik tajribaga ega muhandislar jamoasi" },
+      "turnkey": { "title": "Tayyor yechimlar", "description": "Sifat kafolati bilan yetkazib berish, montaj va ishga tushirish" },
+      "individual": { "title": "Individual yondashuv", "description": "Ishlab chiqarishning aniq vazifalari uchun yechimlar ishlab chiqish" }
+    }
+  },
+  "contact": {
+    "label": "Aloqa",
+    "title": "Keling, loyihangizni muhokama qilaylik",
+    "subtitle": "Maslahat va tijorat taklifi olish uchun biz bilan bog'laning",
+    "address": "Manzil",
+    "addressValue": "O'zbekiston Respublikasi, 100017,\nToshkent, Kiyot-5, 65-uy, 4-xonadon",
+    "phone": "Telefon",
+    "email": "Email",
+    "form": {
+      "name": "Ismingiz",
+      "namePlaceholder": "Ismingizni kiriting",
+      "company": "Kompaniya",
+      "companyPlaceholder": "Kompaniya nomi",
+      "phone": "Telefon",
+      "phonePlaceholder": "+998",
+      "email": "Email",
+      "emailPlaceholder": "email@company.com",
+      "message": "Xabar",
+      "messagePlaceholder": "Loyihangiz yoki vazifangizni tasvirlab bering",
+      "submit": "So'rov yuborish",
+      "submitting": "Yuborilmoqda..."
+    },
+    "success": {
+      "title": "Arizangiz uchun rahmat!",
+      "message": "Biz siz bilan tez orada bog'lanamiz"
+    }
+  },
+  "footer": {
+    "tagline": "Sanoat uskunalari, ehtiyot qismlar yetkazib berish va tayyor montaj",
+    "productsAndServices": "Mahsulotlar va xizmatlar",
+    "contacts": "Aloqa",
+    "links": {
+      "supply": "Uskunalarni yetkazib berish",
+      "installation": "Tayyor montaj",
+      "commissioning": "Ishga tushirish va sozlash",
+      "service": "Servis va texnik xizmat"
+    },
+    "location": "Toshkent, O'zbekiston",
+    "copyright": "© {year} \"SOD EAST TRADE HOUSE\" MChJ. Barcha huquqlar himoyalangan."
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "title": "SOD EAST TRADE HOUSE | Engineering & Industrial Solutions",
+    "description": "Comprehensive engineering solutions for industrial enterprises. Installation, commissioning, equipment repair."
+  },
+  "header": {
+    "about": "About",
+    "industries": "Industries",
+    "products": "Products",
+    "services": "Services",
+    "contact": "Contact",
+    "cta": "Get in Touch",
+    "menu": "Menu"
+  },
+  "hero": {
+    "subtitle": "Equipment and engineering solutions for industry",
+    "title": "Equipment, components, engineering solutions and turnkey installation",
+    "description": "Supply of industrial equipment and components from leading European manufacturers, engineering, comprehensive installation and commissioning",
+    "ctaContact": "Contact Us",
+    "ctaServices": "Our Services",
+    "imageAlt": "SOD EAST TRADE HOUSE — industrial production"
+  },
+  "about": {
+    "label": "About Us",
+    "title": "A reliable partner for your production",
+    "text1": "<strong>SOD EAST TRADE HOUSE LLC</strong> is a company specializing in the supply of industrial equipment, components and comprehensive engineering solutions.",
+    "text2": "We work with leading European manufacturers and provide a full cycle — from engineering calculations, selection and supply of equipment to installation, commissioning and service maintenance.",
+    "clients": "Our Clients",
+    "imageAlt1": "Engineering works",
+    "imageAlt2": "Industrial equipment",
+    "stats": {
+      "objects": "Industrial facilities",
+      "projects": "Successful projects",
+      "specialists": "Specialists",
+      "experience": "Years of experience"
+    }
+  },
+  "industries": {
+    "label": "Industries",
+    "title": "Our Specialization",
+    "items": {
+      "food": {
+        "title": "Food Industry",
+        "description": "Soft drink plants, breweries, dairy plants, canning factories"
+      },
+      "energy": {
+        "title": "Energy",
+        "description": "Power plants, substations, energy infrastructure"
+      },
+      "chemical": {
+        "title": "Chemical Industry",
+        "description": "Chemical enterprises and processing plants"
+      },
+      "metallurgy": {
+        "title": "Metallurgy",
+        "description": "Metallurgical plants and metalworking"
+      }
+    }
+  },
+  "products": {
+    "label": "Products",
+    "equipmentTitle": "Equipment",
+    "componentsTitle": "Equipment Components",
+    "componentsSubtitle": "Supply of equipment and components from leading European manufacturers",
+    "waterTreatmentStandard": "SOD standard water treatment solutions include:",
+    "equipment": {
+      "waterTreatment": {
+        "title": "Water Treatment",
+        "description": "Comprehensive water treatment solutions for various industries — from engineering calculations to turnkey equipment supply.",
+        "details": [
+          "Mechanical filter (coarse filtration) — removes large impurities: sand, rust, silt. Protects subsequent equipment from clogging.",
+          "Fine filter — retains smaller particles (suspended solids), improves water clarity.",
+          "Carbon filter — removes chlorine, organic substances, unpleasant odors and tastes.",
+          "Water softener — reduces water hardness by removing calcium and magnesium salts (prevents scale).",
+          "Iron remover — removes iron and manganese, prevents water discoloration and deposits.",
+          "Reverse osmosis system — deep purification: removes up to 99% of dissolved substances, bacteria and salts.",
+          "UV sterilizer — disinfects water by destroying bacteria and viruses using ultraviolet light."
+        ],
+        "footer": "The entire system is connected by pipelines, equipped with pumping stations and tanks. All main components and elements are made of stainless steel, ensuring compliance with current quality standards, enhanced operational reliability and long equipment service life."
+      },
+      "blending": {
+        "title": "SOD BLENDING Mixing Units",
+        "description": "",
+        "applications": {
+          "0": { "area": "Food Industry (sugar and salt dissolving)", "text": "Mixing units are used for preparing sugar and salt solutions with specified concentrations. They ensure fast and uniform dissolving, product quality stability and compliance with sanitary requirements." },
+          "1": { "area": "Canning Industry (ingredient dissolving)", "text": "Equipment is used for dissolving and preparing components (salt, sugar, additives, marinades). Ensures solution homogeneity, dosing accuracy and recipe stability." },
+          "2": { "area": "Chemical Industry (component mixing)", "text": "Mixing units are used for blending and dissolving chemical substances. They ensure uniform component distribution, process parameter control and production efficiency." }
+        }
+      },
+      "dosing": {
+        "title": "SOD DOSING Units",
+        "description": "",
+        "applications": {
+          "0": { "area": "Canning Industry (ingredient dosing)", "text": "Equipment is used for metered supply of brines, marinades, additives and other ingredients. Ensures uniform component distribution, product quality repeatability and production process optimization." },
+          "1": { "area": "Chemical Industry (reagent dosing)", "text": "Dosing units are designed for precise supply of chemical reagents to process lines. They ensure flow control, process safety and stability of chemical reactions." }
+        }
+      },
+      "cip": {
+        "title": "SOD CIP Stations",
+        "description": "",
+        "applications": {
+          "0": { "area": "Soft Drinks Industry", "text": "CIP stations provide automated washing and disinfection of process equipment without disassembly, ensuring high hygiene levels, reduced downtime and stable end product quality." },
+          "1": { "area": "Dairy Industry", "text": "CIP stations are designed for effective removal of fat, protein and mineral contamination. They ensure compliance with strict sanitary requirements and improve production safety." },
+          "2": { "area": "Canning Industry", "text": "CIP stations are used for comprehensive cleaning of tanks, pipelines and production lines, ensuring removal of product residues, reducing microbiological contamination risk and process stability." },
+          "3": { "area": "Chemical Industry", "text": "CIP stations are used for cleaning equipment from reagent residues and reaction products, preventing cross-contamination, improving operational safety and production cycle efficiency." }
+        }
+      }
+    },
+    "components": {
+      "tanks": {
+        "title": "Tank Equipment",
+        "description": "Stainless steel tanks of various sizes — aseptic, mixing tanks, fermenters, buffer and storage vessels. Used in food, chemical, pharmaceutical and other industries."
+      },
+      "heatExchangers": {
+        "title": "Heat Exchangers",
+        "description": "Plate heat exchangers for heating, cooling and pasteurization from leading company Alfa Laval. High heat transfer efficiency, compact dimensions, easy maintenance. Used in food, energy, chemical industries and heating systems."
+      },
+      "valves": {
+        "title": "Valves",
+        "description": "Shut-off and control valves by ALFA LAVAL, KIESELMANN — seat, disc, shut-off and diverting valves. Precise flow control in pipeline systems of industrial enterprises."
+      },
+      "pumps": {
+        "title": "Pumps",
+        "description": "Centrifugal, rotary and diaphragm pumps for pumping liquids of various viscosities. Hygienic and industrial designs for any process applications."
+      },
+      "automation": {
+        "title": "Automation Elements",
+        "description": "Sensors, controllers, actuators and control panels for process automation. Comprehensive solutions for real-time monitoring and control of production lines."
+      }
+    }
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "Full Range of Industrial Solutions",
+    "subtitle": "Comprehensive services for projects of any scale — from concept to launch",
+    "items": {
+      "supply": { "title": "Equipment Supply", "description": "Selection and supply of industrial equipment and components from leading European manufacturers" },
+      "installation": { "title": "Turnkey Installation", "description": "Comprehensive installation of process lines, pipelines and equipment on a turnkey basis" },
+      "engineering": { "title": "Engineering", "description": "Design and development of engineering solutions for industrial facilities of any complexity" },
+      "welding": { "title": "Welding Works", "description": "Pipeline and metal structure welding to international standards" },
+      "commissioning": { "title": "Commissioning", "description": "Commissioning works and turnkey equipment startup" },
+      "maintenance": { "title": "Repair & Maintenance", "description": "Technical maintenance and repair of industrial equipment" },
+      "automationService": { "title": "Automation", "description": "Programming and automation of production processes" },
+      "transport": { "title": "Transport Services", "description": "Transportation of oversized and standard cargo from the EU to Asian countries" }
+    },
+    "summary": {
+      "directions": "Business areas",
+      "fullCycle": "Full work cycle",
+      "support": "Technical support"
+    }
+  },
+  "whyUs": {
+    "label": "Advantages",
+    "title": "Why Choose Us",
+    "description": "We build long-term partnerships based on trust, quality and results.",
+    "items": {
+      "comprehensive": { "title": "Comprehensive Approach", "description": "Full cycle from design to launch and maintenance" },
+      "expertise": { "title": "Technical Expertise", "description": "A team of engineers with years of experience" },
+      "turnkey": { "title": "Turnkey Solutions", "description": "Supply, installation and launch with quality guarantee" },
+      "individual": { "title": "Individual Approach", "description": "Custom solutions for specific production tasks" }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's discuss your project",
+    "subtitle": "Contact us for a consultation and commercial proposal",
+    "address": "Address",
+    "addressValue": "Republic of Uzbekistan, 100017,\nTashkent, Kiyot-5, house 65, apt. 4",
+    "phone": "Phone",
+    "email": "Email",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "company": "Company",
+      "companyPlaceholder": "Company name",
+      "phone": "Phone",
+      "phonePlaceholder": "+998",
+      "email": "Email",
+      "emailPlaceholder": "email@company.com",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or task",
+      "submit": "Send Request",
+      "submitting": "Sending..."
+    },
+    "success": {
+      "title": "Thank you for your request!",
+      "message": "We will contact you shortly"
+    }
+  },
+  "footer": {
+    "tagline": "Supply of industrial equipment, components and turnkey installation",
+    "productsAndServices": "Products & Services",
+    "contacts": "Contact",
+    "links": {
+      "supply": "Equipment Supply",
+      "installation": "Turnkey Installation",
+      "commissioning": "Commissioning",
+      "service": "Service & Maintenance"
+    },
+    "location": "Tashkent, Uzbekistan",
+    "copyright": "© {year} SOD EAST TRADE HOUSE LLC. All rights reserved."
+  }
+}
