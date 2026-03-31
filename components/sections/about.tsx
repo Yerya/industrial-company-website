@@ -50,6 +50,7 @@ export function About() {
             <img src="/KHSlogo.svg" alt="KHS" className="h-8 md:h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
             <span className="font-[family-name:var(--font-display)] text-lg md:text-xl font-bold text-muted-foreground/50 hover:text-muted-foreground transition-colors">Omega Foods</span>
             <img src="/raupxonLogo.png" alt="Raupxon" className="h-8 md:h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/azotlogo.png" alt="Azot Group" className="h-14 md:h-16 object-contain opacity-70 hover:opacity-100 transition-opacity" />
           </div>
         </div>
 
