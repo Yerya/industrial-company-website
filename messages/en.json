@@ -113,19 +113,19 @@
       },
       "heatExchangers": {
         "title": "Heat Exchangers",
-        "description": "Plate heat exchangers for heating, cooling and pasteurization from leading company Alfa Laval. High heat transfer efficiency, compact dimensions, easy maintenance. Used in food, energy, chemical industries and heating systems."
+        "description": "Plate heat exchangers for heating, cooling and pasteurization from leading company <brand>Alfa Laval</brand>. High heat transfer efficiency, compact dimensions, easy maintenance. Used in food, energy, chemical industries and heating systems."
       },
       "valves": {
         "title": "Valves",
-        "description": "Shut-off and control valves by ALFA LAVAL, KIESELMANN — seat, disc, shut-off and diverting valves. Precise flow control in pipeline systems of industrial enterprises."
+        "description": "Shut-off and control valves by <brand>Alfa Laval</brand>, KIESELMANN — seat, disc, shut-off and diverting valves. Precise flow control in pipeline systems of industrial enterprises."
       },
       "pumps": {
         "title": "Pumps",
-        "description": "Centrifugal, rotary and diaphragm pumps for pumping liquids of various viscosities. Hygienic and industrial designs for any process applications."
+        "description": "<brand>Alfa Laval</brand> centrifugal, rotary and diaphragm pumps for pumping liquids of various viscosities. Hygienic and industrial designs for any process applications."
       },
       "automation": {
         "title": "Automation Elements",
-        "description": "Sensors, controllers, actuators and control panels for process automation. Comprehensive solutions for real-time monitoring and control of production lines."
+        "description": "Sensors, controllers, actuators and control panels for process automation from leading manufacturers — <brand>Siemens</brand>, <brand>Müller</brand>, <brand>NEGELE</brand>. Comprehensive solutions for real-time monitoring and control of production lines."
       }
     }
   },
@@ -164,8 +164,16 @@
     "label": "Contact",
     "title": "Let's discuss your project",
     "subtitle": "Contact us for a consultation and commercial proposal",
-    "address": "Address",
-    "addressValue": "Republic of Uzbekistan, 100017,\nTashkent, Kiyot-5, house 65, apt. 4",
+    "uzOffice": {
+      "title": "Office in Uzbekistan",
+      "address": "Uzbekistan, 100170,\nTashkent, Mustaqillik str. 107-311",
+      "phone": "+998 94 777 77 11"
+    },
+    "euOffice": {
+      "title": "European Representative Office (EU)",
+      "phone": "+370 698 73747",
+      "email": "info@sod-trade-house.com"
+    },
     "phone": "Phone",
     "email": "Email",
     "form": {
@@ -185,6 +193,9 @@
     "success": {
       "title": "Thank you for your request!",
       "message": "We will contact you shortly"
+    },
+    "error": {
+      "message": "Failed to send your request. Please try again or contact us directly."
     }
   },
   "footer": {
@@ -197,7 +208,12 @@
       "commissioning": "Commissioning",
       "service": "Service & Maintenance"
     },
-    "location": "Tashkent, Uzbekistan",
+    "uzOfficeLabel": "Office in Uzbekistan",
+    "uzOfficeAddress": "Tashkent, Mustaqillik str. 107-311",
+    "uzOfficePhone": "+998 94 777 77 11",
+    "euOfficeLabel": "European Representative Office (EU)",
+    "euOfficePhone": "+370 698 73747",
+    "euOfficeEmail": "info@sod-trade-house.com",
     "copyright": "© {year} SOD EAST TRADE HOUSE LLC. All rights reserved."
   }
 }

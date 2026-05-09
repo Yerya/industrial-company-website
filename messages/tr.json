@@ -113,19 +113,19 @@
       },
       "heatExchangers": {
         "title": "Isı Eşanjörleri",
-        "description": "Önde gelen Alfa Laval şirketinden ısıtma, soğutma ve pastörizasyon için plakalı ısı eşanjörleri. Yüksek ısı transfer verimliliği, kompakt boyutlar, kolay bakım. Gıda, enerji, kimya endüstrilerinde ve ısıtma sistemlerinde kullanılır."
+        "description": "Önde gelen <brand>Alfa Laval</brand> şirketinden ısıtma, soğutma ve pastörizasyon için plakalı ısı eşanjörleri. Yüksek ısı transfer verimliliği, kompakt boyutlar, kolay bakım. Gıda, enerji, kimya endüstrilerinde ve ısıtma sistemlerinde kullanılır."
       },
       "valves": {
         "title": "Vanalar",
-        "description": "ALFA LAVAL, KIESELMANN kesme ve kontrol vanaları — koltuklu, diskli, kesme ve yönlendirme vanaları. Endüstriyel işletmelerin boru sistemlerinde hassas akış kontrolü."
+        "description": "<brand>Alfa Laval</brand>, KIESELMANN kesme ve kontrol vanaları — koltuklu, diskli, kesme ve yönlendirme vanaları. Endüstriyel işletmelerin boru sistemlerinde hassas akış kontrolü."
       },
       "pumps": {
         "title": "Pompalar",
-        "description": "Çeşitli viskozitelerde sıvıların pompalanması için santrifüj, rotorlu ve diyafram pompalar. Her türlü proses uygulaması için hijyenik ve endüstriyel tasarımlar."
+        "description": "<brand>Alfa Laval</brand> santrifüj, rotorlu ve diyafram pompalar — çeşitli viskozitelerde sıvıların pompalanması için. Her türlü proses uygulaması için hijyenik ve endüstriyel tasarımlar."
       },
       "automation": {
         "title": "Otomasyon Elemanları",
-        "description": "Proses otomasyonu için sensörler, kontrolörler, aktüatörler ve kontrol panelleri. Üretim hatlarının gerçek zamanlı izleme ve kontrolü için kapsamlı çözümler."
+        "description": "Proses otomasyonu için sensörler, kontrolörler, aktüatörler ve kontrol panelleri — önde gelen üreticilerden <brand>Siemens</brand>, <brand>Müller</brand>, <brand>NEGELE</brand>. Üretim hatlarının gerçek zamanlı izleme ve kontrolü için kapsamlı çözümler."
       }
     }
   },
@@ -164,8 +164,16 @@
     "label": "İletişim",
     "title": "Projenizi konuşalım",
     "subtitle": "Danışmanlık ve ticari teklif almak için bizimle iletişime geçin",
-    "address": "Adres",
-    "addressValue": "Özbekistan Cumhuriyeti, 100017,\nTaşkent, Kiyot-5, ev 65, daire 4",
+    "uzOffice": {
+      "title": "Özbekistan Ofisi",
+      "address": "Özbekistan, 100170,\nTaşkent, Mustakillik cad. 107-311",
+      "phone": "+998 94 777 77 11"
+    },
+    "euOffice": {
+      "title": "Avrupa Temsilciliği (AB)",
+      "phone": "+370 698 73747",
+      "email": "info@sod-trade-house.com"
+    },
     "phone": "Telefon",
     "email": "E-posta",
     "form": {
@@ -185,6 +193,9 @@
     "success": {
       "title": "Talebiniz için teşekkürler!",
       "message": "En kısa sürede sizinle iletişime geçeceğiz"
+    },
+    "error": {
+      "message": "Talebiniz gönderilemedi. Lütfen tekrar deneyin veya doğrudan bizimle iletişime geçin."
     }
   },
   "footer": {
@@ -197,7 +208,12 @@
       "commissioning": "Devreye Alma",
       "service": "Servis ve Bakım"
     },
-    "location": "Taşkent, Özbekistan",
+    "uzOfficeLabel": "Özbekistan Ofisi",
+    "uzOfficeAddress": "Taşkent, Mustakillik cad. 107-311",
+    "uzOfficePhone": "+998 94 777 77 11",
+    "euOfficeLabel": "Avrupa Temsilciliği (AB)",
+    "euOfficePhone": "+370 698 73747",
+    "euOfficeEmail": "info@sod-trade-house.com",
     "copyright": "© {year} SOD EAST TRADE HOUSE LLC. Tüm hakları saklıdır."
   }
 }

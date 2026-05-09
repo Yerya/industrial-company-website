@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, type ReactNode } from "react"
 import { ChevronDown, Droplets, Beaker, Pipette, SprayCan, Container, Thermometer, Gauge, Fan, Cog, ArrowRight, type LucideIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
 
@@ -14,6 +14,7 @@ type ProductDef = {
   hasDetails?: boolean
   hasFooter?: boolean
   applicationCount?: number
+  alfaLaval?: boolean
 }
 
 const equipmentDefs: ProductDef[] = [
@@ -25,20 +26,34 @@ const equipmentDefs: ProductDef[] = [
 
 const componentDefs: ProductDef[] = [
   { id: "tanks", tKey: "tanks", icon: Container, image: "/emkostnoeoborudovanije.jpg" },
-  { id: "heat-exchangers", tKey: "heatExchangers", icon: Thermometer, image: "/sanitary_plate_heat_exchanger.png" },
-  { id: "valves", tKey: "valves", icon: Gauge, image: "/sanitary%20stainless%20steel%20valves%20food%20processing.jpg", images: ["/sanitary%20stainless%20steel%20valves%20food%20processing.jpg", "/klapana1.jpeg"] },
-  { id: "pumps", tKey: "pumps", icon: Fan, image: "/sanitary%20stainless%20steel%20pump%20food%20processing.avif", imageScale: true },
+  { id: "heat-exchangers", tKey: "heatExchangers", icon: Thermometer, image: "/sanitary_plate_heat_exchanger.png", alfaLaval: true },
+  { id: "valves", tKey: "valves", icon: Gauge, image: "/sanitary%20stainless%20steel%20valves%20food%20processing.jpg", images: ["/sanitary%20stainless%20steel%20valves%20food%20processing.jpg", "/klapana1.jpeg"], alfaLaval: true },
+  { id: "pumps", tKey: "pumps", icon: Fan, image: "/sanitary%20stainless%20steel%20pump%20food%20processing.avif", imageScale: true, alfaLaval: true },
   { id: "automation", tKey: "automation", icon: Cog, image: "/elementiavtomatiki.jpg" },
 ]
 
-function DetailContent({ def, section, t }: { def: ProductDef; section: string; t: (key: string) => string }) {
-  const description = t(`${section}.${def.tKey}.description`)
+const richTags = {
+  brand: (chunks: ReactNode) => <span className="font-bold text-brand">{chunks}</span>,
+}
+
+function AlfaLavalBadge({ size = "md" }: { size?: "sm" | "md" }) {
+  const sizeClasses = size === "sm" ? "h-6 px-2.5" : "h-8 px-3"
+  return (
+    <div className={`inline-flex items-center bg-white/95 backdrop-blur-sm rounded-md shadow-md ${sizeClasses}`}>
+      <img src="/alfa-laval-logo.svg" alt="Alfa Laval" className="h-full w-auto object-contain" />
+    </div>
+  )
+}
+
+function DetailContent({ def, section, t }: { def: ProductDef; section: string; t: ReturnType<typeof useTranslations> }) {
+  const rawDescription = t.raw(`${section}.${def.tKey}.description`)
+  const hasDescription = typeof rawDescription === "string" && rawDescription.length > 0
 
   return (
     <>
-      {description && (
+      {hasDescription && (
         <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-          {description}
+          {t.rich(`${section}.${def.tKey}.description`, richTags)}
         </p>
       )}
       {def.hasDetails && (
@@ -73,6 +88,23 @@ function DetailContent({ def, section, t }: { def: ProductDef; section: string; 
   )
 }
 
+function ProductImage({ def, t, section, useContain, className }: { def: ProductDef; t: ReturnType<typeof useTranslations>; section: string; useContain: boolean; className?: string }) {
+  return (
+    <div className={`relative w-full h-full ${useContain ? "bg-white" : "bg-muted/30"} ${className ?? ""}`}>
+      <img
+        src={def.image}
+        alt={t(`${section}.${def.tKey}.title`)}
+        className={useContain ? "absolute inset-0 w-full h-full object-contain p-6" : "absolute inset-0 w-full h-full object-cover"}
+      />
+      {def.alfaLaval && (
+        <div className="absolute top-3 right-3 z-10">
+          <AlfaLavalBadge />
+        </div>
+      )}
+    </div>
+  )
+}
+
 function ProductShowcase({ items, section, useContain = false, compactImage = false }: { items: ProductDef[]; section: string; useContain?: boolean; compactImage?: boolean }) {
   const [activeId, setActiveId] = useState(items[0].id)
   const [expandedMobileId, setExpandedMobileId] = useState<string | null>(null)
@@ -104,8 +136,8 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
               </button>
               {isOpen && (
                 <div className="px-4 pb-5 pt-1 border-t border-border">
-                  <div className={`w-full aspect-[16/9] rounded-lg overflow-hidden mb-4 ${useContain ? "bg-white flex items-center justify-center p-4" : "bg-muted/30"}`}>
-                    <img src={def.image} alt={t(`${section}.${def.tKey}.title`)} className={useContain ? "max-w-full max-h-full object-contain" : "w-full h-full object-cover"} />
+                  <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden mb-4">
+                    <ProductImage def={def} t={t} section={section} useContain={useContain} />
                   </div>
                   <DetailContent def={def} section={section} t={t} />
                 </div>
@@ -154,31 +186,54 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
         <div className="bg-secondary/50 rounded-r-2xl overflow-hidden border border-border border-l-0 min-w-0">
           <div key={active.id} className="animate-in fade-in duration-300">
             {!compactImage && (
-              <div className={`w-full overflow-hidden ${active.images ? "flex gap-0" : "aspect-[21/9]"} ${useContain ? "bg-white" : "bg-muted/30"}`}>
+              <>
                 {active.images ? (
-                  active.images.map((img, i) => (
-                    <div key={i} className={`flex-1 aspect-[21/9] ${useContain ? "flex items-center justify-center p-6" : ""}`}>
-                      <img src={img} alt={t(`${section}.${active.tKey}.title`)} className={useContain ? "max-w-full max-h-full object-contain" : "w-full h-full object-cover"} />
-                    </div>
-                  ))
+                  <div className="grid grid-cols-2">
+                    {active.images.map((img, i) => (
+                      <div key={i} className={`relative aspect-[21/9] ${useContain ? "bg-white" : "bg-muted/30"}`}>
+                        <img
+                          src={img}
+                          alt={t(`${section}.${active.tKey}.title`)}
+                          className={useContain ? "absolute inset-0 w-full h-full object-contain p-6" : "absolute inset-0 w-full h-full object-cover"}
+                        />
+                        {active.alfaLaval && i === 0 && (
+                          <div className="absolute top-3 right-3 z-10">
+                            <AlfaLavalBadge />
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 ) : (
-                  <img src={active.image} alt={t(`${section}.${active.tKey}.title`)} className={useContain ? "max-w-full max-h-full object-contain mx-auto p-6" : "w-full h-full object-cover"} />
+                  <div className="relative aspect-[21/9]">
+                    <ProductImage def={active} t={t} section={section} useContain={useContain} />
+                  </div>
                 )}
-              </div>
+              </>
             )}
             <div className="p-6 md:p-8">
               {compactImage ? (
                 <div className="flex gap-5 mb-5">
-                  <div className="w-32 h-32 rounded-xl overflow-hidden bg-muted/30 flex-shrink-0">
-                    <img src={active.image} alt={t(`${section}.${active.tKey}.title`)} className="w-full h-full object-cover" />
+                  <div className="relative w-32 h-32 rounded-xl overflow-hidden bg-muted/30 flex-shrink-0">
+                    <img src={active.image} alt={t(`${section}.${active.tKey}.title`)} className="absolute inset-0 w-full h-full object-cover" />
+                    {active.alfaLaval && (
+                      <div className="absolute top-1.5 right-1.5 z-10">
+                        <AlfaLavalBadge size="sm" />
+                      </div>
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-[family-name:var(--font-display)] text-xl md:text-2xl font-bold text-foreground mb-2">
                       {t(`${section}.${active.tKey}.title`)}
                     </h3>
-                    {t(`${section}.${active.tKey}.description`) && (
-                      <p className="text-muted-foreground text-sm leading-relaxed">{t(`${section}.${active.tKey}.description`)}</p>
-                    )}
+                    {(() => {
+                      const raw = t.raw(`${section}.${active.tKey}.description`)
+                      return typeof raw === "string" && raw.length > 0 ? (
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {t.rich(`${section}.${active.tKey}.description`, richTags)}
+                        </p>
+                      ) : null
+                    })()}
                   </div>
                 </div>
               ) : (

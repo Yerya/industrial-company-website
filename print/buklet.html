@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: #1a1a1a;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* ===== СТРАНИЦА 1 — ТИТУЛЬНАЯ ===== */
+  .page-cover {
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25mm;
+  }
+
+  .page-cover .logo-main {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 52pt;
+    color: #ffffff;
+    letter-spacing: 5pt;
+    margin-bottom: 12mm;
+  }
+
+  .page-cover .logo-main .accent {
+    color: #E87A20;
+  }
+
+  .page-cover .accent-line {
+    width: 40mm;
+    height: 1mm;
+    background: #E87A20;
+    margin-bottom: 10mm;
+  }
+
+  .page-cover h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 22pt;
+    color: #ffffff;
+    letter-spacing: 4pt;
+    text-transform: uppercase;
+    margin-bottom: 4mm;
+  }
+
+  .page-cover .subtitle {
+    font-size: 10pt;
+    color: #E87A20;
+    font-weight: 500;
+    letter-spacing: 1pt;
+    line-height: 1.6;
+    max-width: 130mm;
+  }
+
+  .page-cover .bottom-info {
+    position: absolute;
+    bottom: 15mm;
+    font-size: 7pt;
+    color: #666;
+    letter-spacing: 0.5pt;
+  }
+
+  /* Corner accents */
+  .page-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25mm;
+    height: 3mm;
+    background: #E87A20;
+  }
+  .page-cover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25mm;
+    height: 3mm;
+    background: #E87A20;
+  }
+
+  /* ===== СТРАНИЦА 2 — О КОМПАНИИ ===== */
+  .page-about {
+    background: #ffffff;
+    padding: 20mm 22mm;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12mm;
+    padding-bottom: 5mm;
+    border-bottom: 0.5mm solid #e5e5e5;
+  }
+
+  .page-header .logo-sm {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+    color: #1a1a1a;
+    letter-spacing: 1.5pt;
+    text-align: right;
+    line-height: 1.2;
+  }
+
+  .page-header .logo-sm .accent {
+    color: #E87A20;
+  }
+
+  .page-header .page-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 7pt;
+    color: #999;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20pt;
+    color: #1a1a1a;
+    margin-bottom: 3mm;
+  }
+
+  .section-accent {
+    width: 20mm;
+    height: 0.8mm;
+    background: #E87A20;
+    margin-bottom: 8mm;
+  }
+
+  .about-text {
+    font-size: 10pt;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 12mm;
+    max-width: 145mm;
+  }
+
+  .about-text strong {
+    color: #E87A20;
+    font-weight: 700;
+  }
+
+  /* Stats */
+  .stats-grid {
+    display: flex;
+    gap: 8mm;
+    margin-bottom: 15mm;
+  }
+
+  .stat-card {
+    flex: 1;
+    background: #fafafa;
+    border: 0.3mm solid #eee;
+    border-radius: 3mm;
+    padding: 6mm;
+    text-align: center;
+  }
+
+  .stat-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 22pt;
+    color: #E87A20;
+  }
+
+  .stat-label {
+    font-size: 7pt;
+    color: #888;
+    margin-top: 1.5mm;
+    line-height: 1.3;
+  }
+
+  /* Industries */
+  .industries-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 13pt;
+    color: #1a1a1a;
+    margin-bottom: 5mm;
+  }
+
+  .industries-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4mm;
+  }
+
+  .industry-card {
+    flex: 1;
+    min-width: 70mm;
+    background: #1a1a1a;
+    border-radius: 3mm;
+    padding: 6mm 7mm;
+  }
+
+  .industry-card h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    color: #E87A20;
+    margin-bottom: 2mm;
+  }
+
+  .industry-card p {
+    font-size: 7pt;
+    color: #aaa;
+    line-height: 1.5;
+  }
+
+  /* ===== СТРАНИЦА 3 — УСЛУГИ ===== */
+  .page-services {
+    background: #ffffff;
+    padding: 20mm 22mm;
+  }
+
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5mm;
+  }
+
+  .service-card {
+    width: calc(50% - 2.5mm);
+    border: 0.3mm solid #e5e5e5;
+    border-radius: 3mm;
+    padding: 7mm;
+    position: relative;
+  }
+
+  .service-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 18pt;
+    color: #E87A20;
+    opacity: 0.3;
+    position: absolute;
+    top: 4mm;
+    right: 5mm;
+  }
+
+  .service-card h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 9.5pt;
+    color: #1a1a1a;
+    margin-bottom: 2mm;
+  }
+
+  .service-card p {
+    font-size: 7.5pt;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* ===== СТРАНИЦА 4 — ПРОДУКЦИЯ + КОНТАКТЫ ===== */
+  .page-products {
+    background: #ffffff;
+    padding: 20mm 22mm;
+  }
+
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4mm;
+    margin-bottom: 15mm;
+  }
+
+  .product-card {
+    width: calc(50% - 2mm);
+    background: #fafafa;
+    border-radius: 3mm;
+    padding: 6mm 7mm;
+    border-left: 1mm solid #E87A20;
+  }
+
+  .product-card h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+    color: #1a1a1a;
+    margin-bottom: 2mm;
+  }
+
+  .product-card p {
+    font-size: 7pt;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Contact footer */
+  .contact-block {
+    background: #1a1a1a;
+    border-radius: 4mm;
+    padding: 10mm 12mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20mm;
+    left: 22mm;
+    right: 22mm;
+  }
+
+  .contact-left h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #ffffff;
+    margin-bottom: 2mm;
+  }
+
+  .contact-left .tagline {
+    font-size: 7.5pt;
+    color: #888;
+  }
+
+  .contact-right {
+    text-align: right;
+  }
+
+  .contact-item {
+    font-size: 8pt;
+    color: #ccc;
+    margin-bottom: 2mm;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2mm;
+  }
+
+  .contact-item .ci-icon {
+    width: 3mm;
+    height: 3mm;
+  }
+
+  .contact-item strong {
+    color: #E87A20;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== СТРАНИЦА 1: ТИТУЛЬНАЯ ===== -->
+<div class="page page-cover">
+  <div class="logo-main"><span class="accent">SOD</span> EAST</div>
+
+  <div class="accent-line"></div>
+
+  <h1>SOD EAST<br>TRADE HOUSE</h1>
+
+  <div class="subtitle">
+    Оборудование, Комплектующие, Инженерные Решения<br>и Монтаж под Ключ
+  </div>
+
+  <div class="bottom-info">Ташкент, Узбекистан &nbsp;·&nbsp; sod.trade.house@gmail.com &nbsp;·&nbsp; +998 93 182 20 54</div>
+</div>
+
+<!-- ===== СТРАНИЦА 2: О КОМПАНИИ ===== -->
+<div class="page page-about">
+  <div class="page-header">
+    <div class="page-label">О компании</div>
+    <div class="logo-sm"><span class="accent">SOD</span> EAST</div>
+  </div>
+
+  <div class="section-title">Надежный партнер для<br>вашего производства</div>
+  <div class="section-accent"></div>
+
+  <div class="about-text">
+    <strong>ООО «SOD EAST TRADE HOUSE»</strong> — компания, специализирующаяся на поставке промышленного оборудования, комплектующих и комплексных инженерных решений.
+  </div>
+  <div class="about-text">
+    Мы работаем с ведущими Европейскими производителями и обеспечиваем полный цикл — от инженерных расчётов, подбора и поставки оборудования до монтажа, пусконаладки и сервисного обслуживания.
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-value">50+</div>
+      <div class="stat-label">Промышленных<br>объектов</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">100+</div>
+      <div class="stat-label">Успешных<br>проектов</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">25+</div>
+      <div class="stat-label">Специалистов<br>в команде</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">8</div>
+      <div class="stat-label">Лет<br>опыта</div>
+    </div>
+  </div>
+
+  <div class="industries-title">Наша специализация</div>
+  <div class="industries-grid">
+    <div class="industry-card">
+      <h4>Пищевая промышленность</h4>
+      <p>Заводы безалкогольных напитков, пивзаводы, молокозаводы, консервные заводы</p>
+    </div>
+    <div class="industry-card">
+      <h4>Энергетика</h4>
+      <p>Электростанции, подстанции, энергоинфраструктура</p>
+    </div>
+    <div class="industry-card">
+      <h4>Химическая промышленность</h4>
+      <p>Химические предприятия и обогатительные фабрики</p>
+    </div>
+    <div class="industry-card">
+      <h4>Металлургия</h4>
+      <p>Металлургические заводы и металлообработка</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== СТРАНИЦА 3: УСЛУГИ ===== -->
+<div class="page page-services">
+  <div class="page-header">
+    <div class="page-label">Услуги</div>
+    <div class="logo-sm"><span class="accent">SOD</span> EAST</div>
+  </div>
+
+  <div class="section-title">Полный спектр<br>промышленных решений</div>
+  <div class="section-accent"></div>
+
+  <div class="about-text" style="margin-bottom: 8mm;">
+    Комплексные услуги для реализации проектов любого масштаба — от идеи до запуска
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <h4>Поставка оборудования</h4>
+      <p>Подбор и поставка промышленного оборудования и комплектующих от ведущих Европейских производителей</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <h4>Монтаж под ключ</h4>
+      <p>Комплексный монтаж технологических линий, трубопроводов и оборудования под ключ</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <h4>Инженеринг</h4>
+      <p>Проектирование и разработка инженерных решений для промышленных объектов любой сложности</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <h4>Сварочные работы</h4>
+      <p>Сварочные работы трубопроводов и металлоконструкций по международным стандартам</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <h4>Пуск и наладка</h4>
+      <p>Пусконаладочные работы и ввод оборудования в эксплуатацию под ключ</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <h4>Ремонт и обслуживание</h4>
+      <p>Техническое обслуживание и ремонт промышленного оборудования</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">07</div>
+      <h4>Автоматизация</h4>
+      <p>Программирование и автоматизация производственных процессов</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">08</div>
+      <h4>Транспортные услуги</h4>
+      <p>Транспортировка из Евросоюза габаритных и негабаритных грузов в страны Азии</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== СТРАНИЦА 4: ПРОДУКЦИЯ + КОНТАКТЫ ===== -->
+<div class="page page-products">
+  <div class="page-header">
+    <div class="page-label">Продукция</div>
+    <div class="logo-sm"><span class="accent">SOD</span> EAST</div>
+  </div>
+
+  <div class="section-title">Оборудование и<br>комплектующие</div>
+  <div class="section-accent"></div>
+
+  <div class="about-text" style="margin-bottom: 8mm;">
+    Поставка оборудования и комплектующих от ведущих Европейских производителей
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card">
+      <h4>Водоподготовка</h4>
+      <p>Комплексные решения по водоподготовке для различных отраслей промышленности</p>
+    </div>
+    <div class="product-card">
+      <h4>Смесительные установки</h4>
+      <p>SOD BLENDING — установки для пищевой, консервной и химической промышленности</p>
+    </div>
+    <div class="product-card">
+      <h4>Дозирующие установки</h4>
+      <p>SOD DOSING — точная подача реагентов и ингредиентов</p>
+    </div>
+    <div class="product-card">
+      <h4>Станции СИП</h4>
+      <p>SOD CIP — автоматизированная мойка и дезинфекция оборудования</p>
+    </div>
+    <div class="product-card">
+      <h4>Ёмкостное оборудование</h4>
+      <p>Ёмкости из нержавеющей стали — асептические, смесительные танки, ферментеры</p>
+    </div>
+    <div class="product-card">
+      <h4>Теплообменники</h4>
+      <p>Пластинчатые теплообменники Alfa Laval для нагрева, охлаждения и пастеризации</p>
+    </div>
+    <div class="product-card">
+      <h4>Клапана и арматура</h4>
+      <p>ALFA LAVAL, KIESELMANN — запорная и регулирующая арматура</p>
+    </div>
+    <div class="product-card">
+      <h4>Насосы и автоматика</h4>
+      <p>Центробежные, роторные насосы, датчики, контроллеры и панели управления</p>
+    </div>
+  </div>
+
+  <!-- Contact block -->
+  <div class="contact-block">
+    <div class="contact-left">
+      <h3>Свяжитесь с нами</h3>
+      <div class="tagline">Обсудим ваш проект и подберём оптимальное решение</div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-item">
+        <span>+998 93 182 20 54</span>
+      </div>
+      <div class="contact-item">
+        <span>sod.trade.house@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span>Ташкент, Киёт-5, дом 65</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

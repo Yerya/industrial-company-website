@@ -4,21 +4,45 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, ArrowRight } from "lucide-react"
-import { useTranslations } from "next-intl"
+import { MapPin, Phone, Mail, ArrowRight, Building2, Globe2, AlertCircle } from "lucide-react"
+import { useTranslations, useLocale } from "next-intl"
+import { sendContactMessage } from "@/app/actions/send-contact"
 
 export function Contact() {
   const t = useTranslations("contact")
+  const locale = useLocale()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [errorMsg, setErrorMsg] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setErrorMsg(null)
     setIsSubmitting(true)
-    await new Promise(resolve => setTimeout(resolve, 1000))
+
+    const formData = new FormData(e.currentTarget)
+    const result = await sendContactMessage({
+      name: String(formData.get("name") ?? ""),
+      company: String(formData.get("company") ?? ""),
+      phone: String(formData.get("phone") ?? ""),
+      email: String(formData.get("email") ?? ""),
+      message: String(formData.get("message") ?? ""),
+      locale,
+    })
+
     setIsSubmitting(false)
-    setIsSubmitted(true)
+    if (result.ok) {
+      setIsSubmitted(true)
+    } else {
+      setErrorMsg(t("error.message"))
+    }
   }
+
+  const uzPhone = t("uzOffice.phone")
+  const uzPhoneHref = uzPhone.replace(/\s/g, "")
+  const euPhone = t("euOffice.phone")
+  const euPhoneHref = euPhone.replace(/\s/g, "")
+  const euEmail = t("euOffice.email")
 
   return (
     <section id="contact" className="py-24 md:py-32 bg-secondary">
@@ -37,45 +61,64 @@ export function Contact() {
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-background" />
+              {/* Uzbekistan Office */}
+              <div className="bg-background rounded-xl p-6 border border-border">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-full bg-foreground flex items-center justify-center flex-shrink-0">
+                    <Building2 className="w-5 h-5 text-background" />
+                  </div>
+                  <h3 className="font-[family-name:var(--font-display)] text-lg font-bold text-foreground">
+                    {t("uzOffice.title")}
+                  </h3>
                 </div>
-                <div>
-                  <p className="font-medium text-foreground mb-1">{t("address")}</p>
-                  <p className="text-muted-foreground whitespace-pre-line">
-                    {t("addressValue")}
-                  </p>
+                <div className="space-y-3 pl-1">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 text-muted-foreground flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground whitespace-pre-line text-sm leading-relaxed">
+                      {t("uzOffice.address")}
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-4 h-4 text-muted-foreground flex-shrink-0 mt-1" />
+                    <a
+                      href={`tel:${uzPhoneHref}`}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                    >
+                      {uzPhone}
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-background" />
+              {/* EU Office */}
+              <div className="bg-background rounded-xl p-6 border border-border">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-full bg-foreground flex items-center justify-center flex-shrink-0">
+                    <Globe2 className="w-5 h-5 text-background" />
+                  </div>
+                  <h3 className="font-[family-name:var(--font-display)] text-lg font-bold text-foreground">
+                    {t("euOffice.title")}
+                  </h3>
                 </div>
-                <div>
-                  <p className="font-medium text-foreground mb-1">{t("phone")}</p>
-                  <a
-                    href="tel:+998931822054"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    +998 93 182 20 54
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-background" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground mb-1">{t("email")}</p>
-                  <a
-                    href="mailto:sod.trade.house@gmail.com"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    sod.trade.house@gmail.com
-                  </a>
+                <div className="space-y-3 pl-1">
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-4 h-4 text-muted-foreground flex-shrink-0 mt-1" />
+                    <a
+                      href={`tel:${euPhoneHref}`}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                    >
+                      {euPhone}
+                    </a>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Mail className="w-4 h-4 text-muted-foreground flex-shrink-0 mt-1" />
+                    <a
+                      href={`mailto:${euEmail}`}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm break-all"
+                    >
+                      {euEmail}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -100,6 +143,7 @@ export function Contact() {
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">{t("form.name")}</label>
                   <Input
+                    name="name"
                     placeholder={t("form.namePlaceholder")}
                     required
                     className="h-12 bg-secondary border-0"
@@ -109,6 +153,7 @@ export function Contact() {
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">{t("form.company")}</label>
                   <Input
+                    name="company"
                     placeholder={t("form.companyPlaceholder")}
                     className="h-12 bg-secondary border-0"
                   />
@@ -118,6 +163,7 @@ export function Contact() {
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">{t("form.phone")}</label>
                     <Input
+                      name="phone"
                       type="tel"
                       placeholder={t("form.phonePlaceholder")}
                       required
@@ -128,6 +174,7 @@ export function Contact() {
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">{t("form.email")}</label>
                     <Input
+                      name="email"
                       type="email"
                       placeholder={t("form.emailPlaceholder")}
                       className="h-12 bg-secondary border-0"
@@ -138,11 +185,19 @@ export function Contact() {
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">{t("form.message")}</label>
                   <Textarea
+                    name="message"
                     placeholder={t("form.messagePlaceholder")}
                     rows={4}
                     className="bg-secondary border-0 resize-none"
                   />
                 </div>
+
+                {errorMsg && (
+                  <div className="flex items-start gap-2 p-3 rounded-md bg-destructive/10 text-destructive text-sm">
+                    <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                    <span>{errorMsg}</span>
+                  </div>
+                )}
 
                 <Button
                   type="submit"

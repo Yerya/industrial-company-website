@@ -113,19 +113,19 @@
       },
       "heatExchangers": {
         "title": "Issiqlik almashtirgichlar",
-        "description": "Yetakchi Alfa Laval kompaniyasidan isitish, sovutish va pasterizatsiya uchun plastinkali issiqlik almashtirgichlar. Yuqori issiqlik uzatish samaradorligi, ixcham o'lchamlar, oson texnik xizmat. Oziq-ovqat, energetika, kimyo sanoati va isitish tizimlarida qo'llaniladi."
+        "description": "Yetakchi <brand>Alfa Laval</brand> kompaniyasidan isitish, sovutish va pasterizatsiya uchun plastinkali issiqlik almashtirgichlar. Yuqori issiqlik uzatish samaradorligi, ixcham o'lchamlar, oson texnik xizmat. Oziq-ovqat, energetika, kimyo sanoati va isitish tizimlarida qo'llaniladi."
       },
       "valves": {
         "title": "Klapanlar",
-        "description": "ALFA LAVAL, KIESELMANN to'suvchi va rostlovchi armatura — o'rindiqli, diskli, to'suvchi va yo'naltiruvchi klapanlar. Sanoat korxonalari quvur tizimlarida oqimlarni aniq boshqarish."
+        "description": "<brand>Alfa Laval</brand>, KIESELMANN to'suvchi va rostlovchi armatura — o'rindiqli, diskli, to'suvchi va yo'naltiruvchi klapanlar. Sanoat korxonalari quvur tizimlarida oqimlarni aniq boshqarish."
       },
       "pumps": {
         "title": "Nasoslar",
-        "description": "Turli yopishqoqlikdagi suyuqliklarni haydash uchun markazdan qochma, rotorli va membranali nasoslar. Har qanday texnologik jarayonlar uchun gigiyenik va sanoat bajarilishlari."
+        "description": "<brand>Alfa Laval</brand> markazdan qochma, rotorli va membranali nasoslar — turli yopishqoqlikdagi suyuqliklarni haydash uchun. Har qanday texnologik jarayonlar uchun gigiyenik va sanoat bajarilishlari."
       },
       "automation": {
         "title": "Avtomatika elementlari",
-        "description": "Texnologik jarayonlarni avtomatlashtirish uchun datchiklar, kontrollerlar, ijro mexanizmlari va boshqaruv panellari. Ishlab chiqarish liniyalarini real vaqt rejimida monitoring qilish va boshqarish uchun kompleks yechimlar."
+        "description": "Texnologik jarayonlarni avtomatlashtirish uchun datchiklar, kontrollerlar, ijro mexanizmlari va boshqaruv panellari yetakchi ishlab chiqaruvchilardan — <brand>Siemens</brand>, <brand>Müller</brand>, <brand>NEGELE</brand>. Ishlab chiqarish liniyalarini real vaqt rejimida monitoring qilish va boshqarish uchun kompleks yechimlar."
       }
     }
   },
@@ -164,8 +164,16 @@
     "label": "Aloqa",
     "title": "Keling, loyihangizni muhokama qilaylik",
     "subtitle": "Maslahat va tijorat taklifi olish uchun biz bilan bog'laning",
-    "address": "Manzil",
-    "addressValue": "O'zbekiston Respublikasi, 100017,\nToshkent, Kiyot-5, 65-uy, 4-xonadon",
+    "uzOffice": {
+      "title": "O'zbekistondagi ofis",
+      "address": "O'zbekiston, 100170,\nToshkent sh., Mustaqillik ko'chasi 107-311",
+      "phone": "+998 94 777 77 11"
+    },
+    "euOffice": {
+      "title": "Yevropadagi vakolatxona (YeI)",
+      "phone": "+370 698 73747",
+      "email": "info@sod-trade-house.com"
+    },
     "phone": "Telefon",
     "email": "Email",
     "form": {
@@ -185,6 +193,9 @@
     "success": {
       "title": "Arizangiz uchun rahmat!",
       "message": "Biz siz bilan tez orada bog'lanamiz"
+    },
+    "error": {
+      "message": "So'rovingizni yuborib bo'lmadi. Iltimos, qayta urinib ko'ring yoki biz bilan to'g'ridan-to'g'ri bog'laning."
     }
   },
   "footer": {
@@ -197,7 +208,12 @@
       "commissioning": "Ishga tushirish va sozlash",
       "service": "Servis va texnik xizmat"
     },
-    "location": "Toshkent, O'zbekiston",
+    "uzOfficeLabel": "O'zbekistondagi ofis",
+    "uzOfficeAddress": "Toshkent sh., Mustaqillik ko'chasi 107-311",
+    "uzOfficePhone": "+998 94 777 77 11",
+    "euOfficeLabel": "Yevropadagi vakolatxona (YeI)",
+    "euOfficePhone": "+370 698 73747",
+    "euOfficeEmail": "info@sod-trade-house.com",
     "copyright": "© {year} \"SOD EAST TRADE HOUSE\" MChJ. Barcha huquqlar himoyalangan."
   }
 }
