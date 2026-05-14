@@ -125,7 +125,7 @@
       },
       "automation": {
         "title": "Avtomatika elementlari",
-        "description": "Texnologik jarayonlarni avtomatlashtirish uchun datchiklar, kontrollerlar, ijro mexanizmlari va boshqaruv panellari yetakchi ishlab chiqaruvchilardan — <brand>Siemens</brand>, <brand>Müller</brand>, <brand>NEGELE</brand>. Ishlab chiqarish liniyalarini real vaqt rejimida monitoring qilish va boshqarish uchun kompleks yechimlar."
+        "description": "Texnologik jarayonlarni avtomatlashtirish uchun datchiklar, kontrollerlar, ijro mexanizmlari va boshqaruv panellari yetakchi ishlab chiqaruvchilardan — <brand>Siemens</brand>, <brand>Electro Müller</brand>, <brand>Anderson-Negele</brand>. Ishlab chiqarish liniyalarini real vaqt rejimida monitoring qilish va boshqarish uchun kompleks yechimlar."
       }
     }
   },

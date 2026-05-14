@@ -18,9 +18,9 @@ type ProductDef = {
 }
 
 const equipmentDefs: ProductDef[] = [
-  { id: "water-treatment", tKey: "waterTreatment", icon: Droplets, image: "/whater%20.jpeg", hasDetails: true, hasFooter: true },
+  { id: "water-treatment", tKey: "waterTreatment", icon: Droplets, image: "/Screenshot%202026-05-14%20at%2015.47.50.png", hasDetails: true, hasFooter: true },
   { id: "blending", tKey: "blending", icon: Beaker, image: "/smesitelnieustanovki.jpg", applicationCount: 3 },
-  { id: "dosing", tKey: "dosing", icon: Pipette, image: "/Chemical-Dosing-Unit.jpg", applicationCount: 2 },
+  { id: "dosing", tKey: "dosing", icon: Pipette, image: "/dosingnew.jpeg", applicationCount: 2 },
   { id: "cip", tKey: "cip", icon: SprayCan, image: "/cipnew.jpeg", applicationCount: 4 },
 ]
 
