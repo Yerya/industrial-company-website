@@ -18,10 +18,10 @@ type ProductDef = {
 }
 
 const equipmentDefs: ProductDef[] = [
-  { id: "water-treatment", tKey: "waterTreatment", icon: Droplets, image: "/vodopodgotovka.jpg", hasDetails: true, hasFooter: true },
+  { id: "water-treatment", tKey: "waterTreatment", icon: Droplets, image: "/whater%20.jpeg", hasDetails: true, hasFooter: true },
   { id: "blending", tKey: "blending", icon: Beaker, image: "/smesitelnieustanovki.jpg", applicationCount: 3 },
   { id: "dosing", tKey: "dosing", icon: Pipette, image: "/Chemical-Dosing-Unit.jpg", applicationCount: 2 },
-  { id: "cip", tKey: "cip", icon: SprayCan, image: "https://images.unsplash.com/photo-1747999060057-89b7a533f347?w=800&q=80", applicationCount: 4 },
+  { id: "cip", tKey: "cip", icon: SprayCan, image: "/cipnew.jpeg", applicationCount: 4 },
 ]
 
 const componentDefs: ProductDef[] = [
@@ -40,7 +40,7 @@ function AlfaLavalBadge({ size = "md" }: { size?: "sm" | "md" }) {
   const sizeClasses = size === "sm" ? "h-6 px-2.5" : "h-8 px-3"
   return (
     <div className={`inline-flex items-center bg-white/95 backdrop-blur-sm rounded-md shadow-md ${sizeClasses}`}>
-      <img src="/alfa-laval-logo.svg" alt="Alfa Laval" className="h-full w-auto object-contain" />
+      <img src="/Alfa_Laval.svg.png" alt="Alfa Laval" className="h-full w-auto object-contain" />
     </div>
   )
 }
@@ -97,7 +97,7 @@ function ProductImage({ def, t, section, useContain, className }: { def: Product
         className={useContain ? "absolute inset-0 w-full h-full object-contain p-6" : "absolute inset-0 w-full h-full object-cover"}
       />
       {def.alfaLaval && (
-        <div className="absolute top-3 right-3 z-10">
+        <div className="absolute top-3 left-3 z-10">
           <AlfaLavalBadge />
         </div>
       )}
@@ -197,7 +197,7 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
                           className={useContain ? "absolute inset-0 w-full h-full object-contain p-6" : "absolute inset-0 w-full h-full object-cover"}
                         />
                         {active.alfaLaval && i === 0 && (
-                          <div className="absolute top-3 right-3 z-10">
+                          <div className="absolute top-3 left-3 z-10">
                             <AlfaLavalBadge />
                           </div>
                         )}
@@ -217,7 +217,7 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
                   <div className="relative w-32 h-32 rounded-xl overflow-hidden bg-muted/30 flex-shrink-0">
                     <img src={active.image} alt={t(`${section}.${active.tKey}.title`)} className="absolute inset-0 w-full h-full object-cover" />
                     {active.alfaLaval && (
-                      <div className="absolute top-1.5 right-1.5 z-10">
+                      <div className="absolute top-1.5 left-1.5 z-10">
                         <AlfaLavalBadge size="sm" />
                       </div>
                     )}
