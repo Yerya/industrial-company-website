@@ -21,7 +21,7 @@ const equipmentDefs: ProductDef[] = [
   { id: "water-treatment", tKey: "waterTreatment", icon: Droplets, image: "/Screenshot%202026-05-14%20at%2015.47.50.png", hasDetails: true, hasFooter: true },
   { id: "blending", tKey: "blending", icon: Beaker, image: "/smesitelnieustanovki.jpg", applicationCount: 3 },
   { id: "dosing", tKey: "dosing", icon: Pipette, image: "/dosingnew.jpeg", applicationCount: 2 },
-  { id: "cip", tKey: "cip", icon: SprayCan, image: "/cipnew.jpeg", applicationCount: 4 },
+  { id: "cip", tKey: "cip", icon: SprayCan, image: "/cipnew.jpeg", imageScale: true, applicationCount: 4 },
 ]
 
 const componentDefs: ProductDef[] = [
@@ -34,6 +34,28 @@ const componentDefs: ProductDef[] = [
 
 const richTags = {
   brand: (chunks: ReactNode) => <span className="font-bold text-brand">{chunks}</span>,
+}
+
+function splitBrand(title: string): { brand: string | null; name: string } {
+  const tail = title.match(/^(.+?)\s+(SOD\s+[A-Z]+)\s*$/)
+  if (tail) return { name: tail[1].trim(), brand: tail[2] }
+  const head = title.match(/^(SOD\s+[A-Z]+)\s+(.+)$/)
+  if (head) return { brand: head[1], name: head[2].trim() }
+  return { brand: null, name: title }
+}
+
+function ProductTitle({ title, variant }: { title: string; variant: "compact" | "large" | "header" }) {
+  const { brand, name } = splitBrand(title)
+  if (variant === "header") {
+    return <span className="flex flex-col leading-tight">
+      {brand && <span className="text-[10px] font-bold tracking-[0.15em] text-brand mb-0.5">{brand}</span>}
+      <span>{name}</span>
+    </span>
+  }
+  return <>
+    {brand && <span className="block text-xs font-bold tracking-[0.15em] text-brand mb-1.5">{brand}</span>}
+    <span>{name}</span>
+  </>
 }
 
 function AlfaLavalBadge({ size = "md" }: { size?: "sm" | "md" }) {
@@ -130,7 +152,7 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
                   <PIcon className="w-5 h-5" />
                 </div>
                 <span className="font-[family-name:var(--font-display)] text-base font-semibold text-foreground flex-1">
-                  {t(`${section}.${def.tKey}.title`)}
+                  <ProductTitle title={t(`${section}.${def.tKey}.title`)} variant="header" />
                 </span>
                 <ChevronDown className={`w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
               </button>
@@ -172,7 +194,7 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
                 <span className={`font-[family-name:var(--font-display)] text-base font-semibold transition-colors ${
                   isActive ? "text-foreground" : "text-muted-foreground"
                 }`}>
-                  {t(`${section}.${def.tKey}.title`)}
+                  <ProductTitle title={t(`${section}.${def.tKey}.title`)} variant="header" />
                 </span>
                 <ArrowRight className={`w-4 h-4 ml-auto flex-shrink-0 transition-all ${
                   isActive ? "opacity-100 text-foreground translate-x-0" : "opacity-0 -translate-x-2"
@@ -215,7 +237,7 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
               {compactImage ? (
                 <div className="flex gap-5 mb-5">
                   <div className="relative w-32 h-32 rounded-xl overflow-hidden bg-muted/30 flex-shrink-0">
-                    <img src={active.image} alt={t(`${section}.${active.tKey}.title`)} className="absolute inset-0 w-full h-full object-cover" />
+                    <img src={active.image} alt={t(`${section}.${active.tKey}.title`)} className={`absolute inset-0 w-full h-full ${active.imageScale ? "object-contain p-2" : "object-cover"}`} />
                     {active.alfaLaval && (
                       <div className="absolute top-1.5 left-1.5 z-10">
                         <AlfaLavalBadge size="sm" />
@@ -224,7 +246,7 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-[family-name:var(--font-display)] text-xl md:text-2xl font-bold text-foreground mb-2">
-                      {t(`${section}.${active.tKey}.title`)}
+                      <ProductTitle title={t(`${section}.${active.tKey}.title`)} variant="compact" />
                     </h3>
                     {(() => {
                       const raw = t.raw(`${section}.${active.tKey}.description`)
@@ -238,7 +260,7 @@ function ProductShowcase({ items, section, useContain = false, compactImage = fa
                 </div>
               ) : (
                 <h3 className="font-[family-name:var(--font-display)] text-xl md:text-2xl font-bold text-foreground mb-4">
-                  {t(`${section}.${active.tKey}.title`)}
+                  <ProductTitle title={t(`${section}.${active.tKey}.title`)} variant="large" />
                 </h3>
               )}
               <DetailContent def={active} section={section} t={t} />
